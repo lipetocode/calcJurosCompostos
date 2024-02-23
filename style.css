@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* Seleciona todos os elementos e define a fonte padrão */
+* {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Seleciona o elemento header e define o estilo do cabeçalho */
+body {
+    background-color: #55505C;
+    color: #D6F8D6;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Seleciona o elemento h1 dentro do header e define o estilo do título */
+body h1 {
+    font-size: 32px;
+    margin: 0;
+    text-align: center;
+}
+
+body p {
+    font-size: 16px;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
