@@ -75,7 +75,7 @@
                     // Converte o resultado para o formato monetário
                     resultado = resultado.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
                     // Exibe o resultado na tela
-                    $("#resultado").html("O valor acumulado após " + tempo / 12 + " anos de contribuição é de R$ " + resultado + ".");
+                    $("#resultado").html("O valor acumulado após " + tempo / 12 + " anos de contribuição é de R$ " + mensalidade * tempo + ".");
                     $("#resultado").show();
                     // Exibe o texto com as informações na tela
                     $("#texto").html("Olá " + nome + ", juntando R$ " + mensalidade.toFixed(2) + " todo mês, você terá R$ " + resultado + " em " + tempo / 12 + " anos.");
