@@ -37,7 +37,9 @@
                 <input type="number" class="form-control" id="tempo" name="tempo"
                     placeholder="Digite o tempo de contribuição" min="0" step="1" required>
             </div>
-            <button type="submit" class="btn btn-primary">Simular</button>
+            <div class="container-btn">
+                <button type="submit" class="btn btn-primary">Simular</button>
+            </div>
         </form>
         <!-- Cria um elemento para exibir o resultado -->
         <div id="resultado" class="alert alert-success" style="display: none;"></div>
@@ -75,7 +77,7 @@
                     // Formata o resultado com duas casas decimais
                     resultado = resultado.toFixed(2);
                     // Converte o resultado para o formato monetário
-                    resultado = resultado.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+                    resultado = resultado.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
                     // Exibe o resultado na tela
                     $("#resultado").html("O valor acumulado após " + tempo / 12 + " anos de contribuição é de R$ " + mensalidade * tempo + ".");
                     $("#resultado").show();
